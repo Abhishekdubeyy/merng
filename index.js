@@ -20,7 +20,7 @@ mongoose
     .connect(MONGODB, { useNewUrlParser : true })  //otherwise will give deprecation warning if we dont
     .then(() => {
         console.log('Mongodb connected');  //to show db connected
-        return server.listen({ port : 4000 });
+        return server.listen({ port : 5000 });
     }) 
     .then((res) => {                      //server.listen({port: 5000}) //server running
         console.log(`Server running at ${res.url}`);
